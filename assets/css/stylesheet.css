@@ -1,0 +1,191 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    grid-template-rows: auto 60rem auto
+    }
+    
+    .flex-container {
+        grid-column: 1/2;
+        grid-row: 1;
+        display: flex;
+        
+        
+    }
+    .flex-container div {
+        background-color: #f1f1f1;
+        height: 5rem;
+    }
+    
+    #flexcontainer {
+        background-color: #f1f1f1;
+        height: 5rem;
+        position: absolute;
+        width: 34rem;
+        margin-left: 3rem;
+        top: 2rem;
+       
+    }
+    
+    #home-team, #away-team {
+        display: flex;
+    }
+    
+    #img-container {
+        position: relative;
+        width: 3rem;
+    }
+
+    
+    
+    #home-logo, #away-logo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        justify-content: center;
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    #home-team-name-container, #away-team-name-container {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 6rem;
+    }
+    #home-team, #away-team h1 {
+        justify-content: center;
+        color:#2E4053;
+        
+    }
+    
+    #score-board {
+        width: 8rem;
+        background-color:#2E4053;
+        color:  #f1f1f1;
+        font-family: -apple-system, 'Segoe UI Light', Ubuntu, Arial, sans-serif;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #score-board-text{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color:#2E4053;
+        width: 100%;
+        height: 50%;
+        padding-top: 1.3rem;
+        
+        
+    }
+    
+    h1 {
+        font-family: -apple-system, 'Segoe UI Light', Ubuntu, Arial, sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    #score-board h1 {
+        color:  #f1f1f1;
+    }
+
+    #score-board p{
+        display: inline;
+        font-size: 2rem;
+    }
+    
+    #body-overlay {
+        background-color:transparent;
+    }
+    
+    body {
+        background-color: transparent;
+    }
+    
+    #clock {
+        display: inline-block;
+        background-color:#2E4053;
+        color:  #f1f1f1;
+        font-size: 2rem;
+        width: 8rem;
+    }
+    
+    .spiideo-logo {
+        grid-row: 1;
+        grid-column: 3;
+    }
+    
+    .buttons {
+        grid-row: 3;
+        grid-column: 1;
+        display: none;
+    }
+    
+    @keyframes rotate  {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+    }
+
+    
+    @keyframes slidein {
+        from { transform: scaleX(0); }
+        to   { transform: scaleX(1); }
+      }
+
+    .spiideo-logo {
+        top: 2rem;
+        /* display: none; */
+    } 
+
+    #spiideo-svg {
+        justify-content: center;
+        width: 5rem;
+        height: 5rem;
+        transform-origin: center center; 
+        transform-box: fill-box;
+        animation: rotate 6s infinite  0s linear; 
+    }
+    
+    #sponsor { 
+        grid-row: 2;
+        position: relative;
+        grid-column: 1;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+
+    }
+    
+    #sponsor-logo {
+        position: absolute;
+        width: 40rem;
+        height: auto;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+       
+       
+    }
+
+    #debug{
+        position: absolute;
+        top: 20px;
+        left: 400px;
+        color: red;
+    }
+    
