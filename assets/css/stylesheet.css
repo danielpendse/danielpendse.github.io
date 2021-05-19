@@ -145,7 +145,7 @@
 
     .spiideo-logo {
         top: 2rem;
-        display: none;
+       /*  display: none; */
     } 
 
     #spiideo-svg {
