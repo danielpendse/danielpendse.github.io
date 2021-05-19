@@ -5,7 +5,7 @@ var stopp = document.getElementById('stop');
 var clear = document.getElementById('clear');
 var t;
 var clock_on = false;
-// timer();
+timer();
 
 
 let frameNbr = 0;
@@ -67,10 +67,10 @@ function tick(num) {
     
 }
 
-// function timer() {
-//     t = setTimeout(tick, 1000);
-//     clock_on = true;
-// }
+ function timer() {
+     t = setTimeout(tick, 1000);
+     clock_on = true;
+ }
 
 // /* Start button */
 // function start_tick() {
