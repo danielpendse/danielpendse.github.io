@@ -7,8 +7,14 @@
 <body>
     <h1>Browser detection</h1>
     <h2 id=info></h2>
+    <h2 id=cef></h2>
     <script>
         console.log(navigator);
+        if (typeof window.cefQuery === 'function') {
+            document.getElementById("cef").innerHTML = "We are working within CEF"
+        } else {
+            document.getElementById("cef").innerHTML = "We are not working within CEF"
+        }
         txt = "<p>Browser Product: " + navigator.product + "</p>";
         txt+= "<p>Browser Vendor: " + navigator.vendor + "</p>";
         txt+= "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
