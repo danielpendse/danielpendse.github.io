@@ -1,54 +1,62 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css">
-    <script src="/assets/js/clock.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/stylegrid.css">
+    <script src="assets/js/clock.js" type="text/javascript"></script>
     <title>MyApp</title>
 </head>
 
 <body id="body-overlay">
     <div class="grid-container">
-        <div id="flexcontainer" class=flex-container>
-            <div id="home-team">
-                <div id="img-container">
-                    <img src="/assets/logos/Malmo_FF_logo.svg" alt="mff logo" id="home-logo" />
+        <div class="item1">
+            <div id="flexcontainer" class=flex-container>
+                <div id="home-team">
+                    <div id="img-container">
+                        <img src="assets/logos/Malmo_FF_logo.svg" alt="mff logo" id="home-logo" />
+                    </div>
+                    <div id="home-team-name-container">
+                        <h1 id="test">MFF</h1>
+                    </div>
                 </div>
-                <div id="home-team-name-container">
-                    <h1 id="test">MFF</h1>
+                <div id="score-board">
+                    <div id="score-board-text">
+                        <p id="home-team-score">0</p>
+                        <p> - </p>
+                        <p id="away-team-score">0</p>
+                    </div>
+                </div>
+                <div id="away-team">
+                    <div id="away-team-name-container">
+                        <h1>HIF</h1>
+                    </div>
+                    <div id="img-container">
+                        <img src="assets/logos/Helsingborgs_IF_logo.svg" alt="hff logo" id="away-logo" />
+                    </div>
+                </div>
+                <div id="clock">
+                    <h1 id="time">00:00</h1>
                 </div>
             </div>
-            <div id="score-board">
-                <div id="score-board-text">
-                    <p id="home-team-score" >0</p>
-                    <p> - </p>
-                    <p id="away-team-score">0</p>
-                </div>
-            </div> 
-            <div id="away-team">
-                <div id="away-team-name-container">
-                    <h1>HIF</h1>
-                </div>
-                <div id="img-container">
-                    <img src="/assets/logos/Helsingborgs_IF_logo.svg" alt="hff logo"
-                        id="away-logo" />
-                </div>
-            </div>
-            <div id="clock">
-                <h1 id="time">00:00</h1>
+        </div>
+        <div class="item2">
+            <img id="spiideo-svg" src="assets/logos/spiideo_logo.svg" alt="spiideo-logo">
+        </div>
+        <div class="item3">
+            <div class="buttons">
+                <button onclick="start_tick()" id="start">start</button>
+                <button onclick="stop_tick()" id="stopp">stop</button>
+                <button onclick="clear_clock()" id="clear">clear</button>
+                <button onclick="game_start_animation()" id="animate_scoreboard_in">Game start!</button>
+                <button onclick="home_team_goal(2)" id="home-team-goal">HomeGoal!</button>
+                <button onclick="away_team_goal(2)" id="away-team-goal">AwayGoal!</button>
+
             </div>
         </div>
-
-        <div class="spiideo-logo">
-            <img id="spiideo-svg" src="/assets/logos/spiideo_logo.svg" alt="spiideo-logo">
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6">
+            <img src="assets/logos/spiideo_logo.jpeg" alt="sponsor logo" id="sponsor-logo" />
         </div>
-        <div id="sponsor">
-            <img src="/assets/logos/spiideo_logo.jpeg" alt="sponsor logo" id="sponsor-logo" />
-        </div>
-
-        <div id="debug">
-            <h1 id="debug-text"></h1>
-        </div>
-
     </div>
 
 
