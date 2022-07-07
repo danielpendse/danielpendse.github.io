@@ -177,6 +177,7 @@ h1 {
     animation: move 1s ease;
     animation-iteration-count: infinite;
     clip-path: circle(40%);
+    -webkit-clip-path: circle(40%);
 }
 
 
