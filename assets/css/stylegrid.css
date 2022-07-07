@@ -176,6 +176,7 @@ h1 {
     background-color: blue;
     animation: move 1s ease;
     animation-iteration-count: infinite;
+    clip-path: circle(40%);
 }
 
 
