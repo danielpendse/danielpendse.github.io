@@ -193,8 +193,6 @@ h1 {
 #sponsor-logo {
     width: 1000px;
     animation: skew 1s linear infinite, blackToWhite 4s linear infinite;
-    clip-path: circle(35%);
-    -webkit-clip-path: circle(35%);
 }
 
 
